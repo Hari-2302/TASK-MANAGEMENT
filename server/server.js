@@ -29,6 +29,9 @@ const taskSchema = new mongoose.Schema(
 );
 
 const Task = mongoose.model("Task", taskSchema);
+app.get('/', (req, res) => {
+  res.send('Smart Leave Portal Backend is running successfully!');
+});
 
 // Get all tasks
 app.get("/tasks", async (req, res) => {
