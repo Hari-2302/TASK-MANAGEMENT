@@ -4,7 +4,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-const API = process.env.REACT_APP_API ||"https://task-management-backend-a0xs.onrender.com/tasks";
+const API = process.env.REACT_APP_API ||"https://task-management-backend-a0xs.onrender.com";
 
 function App() {
   const [tasks, setTasks] = useState([]);
